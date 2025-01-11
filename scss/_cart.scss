@@ -18,11 +18,16 @@ $btnColor:#ff5e45;
     }
     @include iPhone(){
         padding:15px;
+        flex-wrap: wrap;
     }
     .type{
         width: 20%;
         @include pad(){
             width: 23%;
+        }
+        @include iPhone(){
+            width: 100%;
+            margin-bottom: 0.5em;
         }
         h2{
             font-family: MicrosoftJhengHeiRegular;
@@ -72,6 +77,9 @@ $btnColor:#ff5e45;
     }
     .menu{
         width: 75%;
+        @include iPhone(){
+            width: 100%;
+        }
     }
     .search{
         display: flex;
