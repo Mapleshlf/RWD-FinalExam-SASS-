@@ -1,0 +1,26 @@
+<div class="footer">
+    <div class="about">
+        <h3>關於 六角西餐廳</h3>
+        <p>Curabitur lobortis id lorem id bibndum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. </p>
+    </div>
+    <div class="contact about" id="map">
+        <h3>聯絡方式</h3>
+        <ul>
+            <li><i class="fa-solid fa-house" style="color: #3d1101;"></i><a href="#">高雄市中正五路到底</a></li>
+            <li><i class="fa-solid fa-phone" style="color: #3d1101;"></i><a href="tel:+886 886 886">+886 886 886</a></li>
+            <li><i class="fa-solid fa-envelope" style="color: #3d1101;"></i><a href="mailto:service@hexschool.com">hexschool@gmail.com</a></li>
+        </ul>
+        
+    </div>
+    <div class="link">
+        <a href="#" class="logo"><img src="images/logo_l@svg.svg" alt="logo"></a>
+        <ul class="social">
+            <li>
+                <a href="https://www.google.com.tw/" target="_blank"><i class="fa-brands fa-square-google-plus fa-2xl" style="color: #f26f18;"></i></a>
+            </li>
+            <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-twitter fa-2xl" style="color: #74C0FC;"></i></i></a></li>
+            <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook fa-2xl" style="color: #015798;"></i></a></li>
+        </ul>
+        
+    </div>
+</div>
