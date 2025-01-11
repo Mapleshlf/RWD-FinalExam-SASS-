@@ -1,0 +1,234 @@
+$font-family:MicrosoftJhengHeiRegular;
+$font-xl:24px;
+$font-l:20px;
+$font-m:16px;
+$font-s:14px;
+$mainColor:#3D1101;
+$main2Color:#EFE9E7;
+$btnColor:#ff5e45;
+
+/* cart.html 開始 header,footer沿用 */
+.cart{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 42px;
+    background: #EFE9E7;
+    @include pad(){
+        padding:50px 15px;
+    }
+    @include iPhone(){
+        padding:15px;
+    }
+    .type{
+        width: 20%;
+        @include pad(){
+            width: 23%;
+        }
+        h2{
+            font-family: MicrosoftJhengHeiRegular;
+            font-size: 20px;
+            color: $mainColor;
+            line-height: 32px;
+            margin-bottom: 0.5em;
+            @include iPhone(){
+                font-size: 18px;
+            }
+            i{
+                margin-right: 15px;
+                @include pad(){
+                    width: 50%;
+                    margin-right: 5px;
+                    display: inline;
+                }
+            }
+        }
+    }
+    .typeUl{
+        width: 100%;
+        a{
+            display: block;
+            width: 100%;
+            text-decoration: none;
+            border-bottom:1px solid $mainColor;
+            font-family: MicrosoftJhengHeiRegular;
+            font-size: 16px;
+            color: $mainColor;
+            line-height: 32px;
+            text-indent: .5em;
+            @include iPhone(){
+                text-indent: 0;
+            }
+            &:hover{
+                background: $mainColor;
+                color: $main2Color;
+            }
+        }
+    }
+    .typeChoose{
+        a{
+            background: $mainColor;
+            color: $main2Color;
+        }
+    }
+    .menu{
+        width: 75%;
+    }
+    .search{
+        display: flex;
+        margin-bottom: 26px;
+        justify-content: space-between;
+        @include iPhone(){
+            flex-wrap: wrap;
+        }
+        ul{
+            display: flex;
+            align-items: center;
+            padding-right: 21px;
+            @include iPhone(){
+                width: 100%;
+                padding: 0;
+            }
+        }
+        li{
+            @include iPhone{
+                width: 50%;
+            }
+            a{
+                font-family: MicrosoftJhengHeiRegular;
+                font-size: 16px;
+                color: $mainColor;
+                text-decoration: none;
+                padding:0 12px;
+                @include iPhone(){
+                    display: block;
+                    text-align: center;
+                }
+                &:hover{
+                    background: orange;
+                    color: $main2Color;
+                }
+                i{
+                    color: $mainColor;
+                }
+            }
+            .x-1{
+                border-right: 1px solid $mainColor;
+            }
+        }
+    }
+    .searchbutton{
+        border: 1px solid #3D1101;
+        width: 70%;
+        border-right: none;
+        @include iPhone(){
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        input{
+            width: 92.5%;
+            float:left;
+            background: #EFE9E7;
+            padding:6.5px 0;
+            border: 2px solid #3D1101;
+            @include iPhone(){
+                width: 87.5%;
+            }
+            &:hover{
+                box-shadow : inset 0 0 0 30px rgb(255, 226, 182);
+            }
+            &:focus{
+                box-shadow : inset 0 0 0 30px rgb(255, 226, 182);
+            }
+        }
+        button{
+            float:left;
+            background: #501e0c;
+            width: 7.5%;
+            height: 32px;
+            @include iPhone(){
+                width: 12.5%;
+            }
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+    .itemList{
+        display: flex;
+        flex-wrap: wrap;
+        .item{
+            position: relative;
+            width: 32.3%;
+            margin:0 .5% 30px;
+            box-shadow:3px 3px 4px 0px rgba(0,0,0,0.16);
+            text-align: center;
+            padding-bottom:10px;
+            @include pad(){
+                width: 49%;
+            }
+            @include iPhone(){
+                width: 99%;
+            }
+            img{
+                margin-bottom: 11px;
+            }
+            h3{
+                font-family: $font-family;
+                font-size: $font-l;
+                color: $mainColor;
+                font-weight: 600;
+                line-height: 32px;
+            }
+            h4{
+                font-family: $font-family;
+                font-size: $font-m;
+                color: $mainColor;
+            }
+            .line{
+                position: absolute;
+                top: 160px;
+                left: 65px;
+                width: 91px;
+                border-bottom:0.5px solid $mainColor;
+                @include pad(){
+                    top:66%;
+                    left: 20%;
+                    width: 60%;
+                }
+            }
+            h2{
+                margin: 20px 0 13px;
+                font-family: Roboto-Light;
+                color: $mainColor;
+                font-style: italic;
+                font-size: 20px;
+                font-weight: 600;
+            }
+            .addCart{
+                display: block;
+                font-family: MicrosoftJhengHeiRegular;
+                font-size: 16px;
+                color: $btnColor;
+                border: 2px solid $btnColor;
+                border-radius: 3px;
+                padding:3px 49px;
+                margin:0 10px;
+                &:hover{
+                    color: $main2Color;
+                    background: $btnColor;
+                    i{
+                        color: $main2Color;
+                    }
+                }
+                i{
+                    color: $btnColor;
+                }
+            }
+        }
+    }
+    .itemLove{
+        position: absolute;
+        top: 9px;
+        left: 9px;
+    }
+}

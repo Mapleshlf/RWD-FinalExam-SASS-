@@ -1,0 +1,14 @@
+$font-family:MicrosoftJhengHeiRegular;
+$font-xl:24px;
+$font-l:20px;
+$font-m:16px;
+$font-s:14px;
+$mainColor:#3D1101;
+$main2Color:#EFE9E7;
+
+/* 圖片遮擋文字 */
+@mixin hide-text{
+    text-indent:101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
